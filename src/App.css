@@ -1,0 +1,91 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('../public/7.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+  margin: 150px;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ff99cc;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ff99cc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff66b2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #ff4d94;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid #ff99cc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+li span:hover {
+  color: #ff66b2;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+
+button {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  form, ul {
+    max-width: 90%;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
